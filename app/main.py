@@ -13,7 +13,7 @@ from langchain_community.vectorstores.faiss import DistanceStrategy
 from langchain_huggingface import HuggingFaceEmbeddings
 
 from llm_agent import ChatBot
-from app.data_ingestor import ingest
+from  data_ingestor import ingest
 from retriever import SelfQueryRetriever
 import chatbot_verbosity as chatbot_verbosity
 
