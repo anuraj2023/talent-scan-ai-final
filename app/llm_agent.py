@@ -1,4 +1,4 @@
-import sys, httpx
+import sys
 sys.dont_write_bytecode = True
 
 from langchain_openai.chat_models import ChatOpenAI
@@ -103,7 +103,7 @@ class ChatBot():
   def generate_message_stream(self, question: str, docs: list, history: list, prompt_cls: str):
     context = "\n\n".join(doc for doc in docs)
     
-    if prompt_cls == "retrieve_applicant_jd":
+    if prompt_cls == "retrieve_matching_applicant_by_jd":
       system_message = SystemMessage(content="""
         You are an expert in talent acquisition that helps determine the best candidate among multiple suitable resumes.
         Use the following pieces of context to determine the best resume given a job description. 
@@ -132,4 +132,5 @@ class ChatBot():
       """)
 
     stream = self.llm.stream([system_message, user_message])
+
     return stream

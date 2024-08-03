@@ -7,7 +7,7 @@ import numpy as np
 def render(document_list: list, meta_data: dict, time_elapsed):
   retriever_message = st.expander(f"Verbosity")
   message_map = {
-    "retrieve_applicant_jd": "**A job description is detected**. The system defaults to using RAG...",
+    "retrieve_matching_applicant_by_jd": "**A job description is detected**. The system defaults to using RAG...",
     "retrieve_applicant_id": "**Applicant IDs are provided**. The system defaults to using exact ID retrieval...",
     "no_retrieve": "**No retrieval is required for this task**. The system will utilize chat history to answer..."
   }
@@ -16,7 +16,7 @@ def render(document_list: list, meta_data: dict, time_elapsed):
     st.markdown(f"Total time elapsed: {np.round(time_elapsed, 3)} seconds")
     st.markdown(f"{message_map[meta_data['query_type']]}")
 
-    if meta_data["query_type"] == "retrieve_applicant_jd":
+    if meta_data["query_type"] == "retrieve_matching_applicant_by_jd":
       st.markdown(f"Using {meta_data['rag_mode']} to retrieve...")
       st.markdown(f"Returning top 5 most similar resumes...")
 

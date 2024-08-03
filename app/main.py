@@ -16,6 +16,15 @@ from llm_agent import ChatBot
 from  data_ingestor import ingest
 from retriever import SelfQueryRetriever
 import chatbot_verbosity as chatbot_verbosity
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Access the environment variables
+OPEN_AI_KEY = os.getenv('OPEN_AI_API_KEY')
+
 
 import time
 
@@ -145,9 +154,9 @@ user_query = st.chat_input("Type your message here...")
 with st.sidebar:
   st.markdown("# Settings")
 
-  st.text_input("OpenAI's API Key", type="password", key="api_key")
+  st.text_input("OpenAI's API Key", type="password", key="api_key", value="")
   #st.selectbox("RAG Mode", ["Generic RAG", "RAG Fusion"], placeholder="Generic RAG", key="rag_selection")
-  st.text_input("GPT Model", "gpt-3.5-turbo", key="gpt_selection")
+  st.text_input("GPT Model", "gpt-4o", key="gpt_selection")
   st.file_uploader("Upload resumes", type=["pdf"], key="uploaded_files", accept_multiple_files=True, on_change=upload_files)
   st.button("Clear conversation", on_click=clear_message)
 
@@ -188,7 +197,7 @@ if user_query is not None and user_query != "":
     with st.spinner("Generating answers..."):
       document_list = st.session_state.retriever.retrieve_docs(user_query, st.session_state.llm, st.session_state.rag_selection)
       query_type = st.session_state.retriever.meta_data["query_type"]
-      st.session_state.resume_list = document_list
+      # st.session_state.resume_list = document_list
       stream_message = st.session_state.llm.generate_message_stream(user_query, document_list, [], query_type)
     end = time.time()
 
