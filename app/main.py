@@ -11,6 +11,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 from langchain_community.vectorstores import FAISS
 from langchain_community.vectorstores.faiss import DistanceStrategy
 from langchain_huggingface import HuggingFaceEmbeddings
+import requests
 
 from llm_agent import ChatBot
 from  data_ingestor import ingest
@@ -24,6 +25,49 @@ load_dotenv()
 
 # Access the environment variables
 OPEN_AI_KEY = os.getenv('OPEN_AI_API_KEY')
+
+def get_openai_model_names():
+    url = "https://api.openai.com/v1/models"
+    api_key = OPEN_AI_KEY
+    
+    if not api_key:
+        raise ValueError("OpenAI API key not found. Please set the OPENAI_API_KEY environment variable.")
+
+    headers = {
+        'Authorization': f'Bearer {api_key}'
+    }
+
+    response = requests.get(url, headers=headers)
+    
+    if response.status_code == 200:
+        models = response.json()["data"]
+        gpt_model_names = [model["id"] for model in models if "gpt" in model["id"].lower()]
+        print("model_names are: ", gpt_model_names)
+        return gpt_model_names
+    else:
+        print(f"Error: {response.status_code}")
+        print(response.text)
+        return None
+
+# List of available Open AI models
+AVAILABLE_MODELS = get_openai_model_names()
+# [
+#    "gpt-4o-mini-2024-07-18",
+#    "gpt-4o-mini",
+#     "gpt-4o",
+#     "gpt-4o-2024-05-13",
+#     "gpt-4-turbo",
+#     "gpt-4-turbo-2024-04-09",
+#     "gpt-4-turbo-preview",
+#     "gpt-4-0125-preview",
+#     "gpt-4-1106-preview",
+#     "gpt-4",
+#     "gpt-4-0613",
+#     "gpt-4-0314",
+#     "gpt-3.5-turbo",
+#     "gpt-3.5-turbo-16k",
+#     "gpt-3.5-turbo-instruct"
+# ]
 
 
 import time
@@ -62,6 +106,9 @@ st.title("Talent Scan AI")
 
 
 # Initialize session state variables
+if "selected_model" not in st.session_state:
+    st.session_state.selected_model = AVAILABLE_MODELS[0]
+
 if "chat_history" not in st.session_state:
   st.session_state.chat_history = [AIMessage(content=welcome_message)]
 
@@ -147,6 +194,11 @@ def clear_message():
   st.session_state.chat_history = [AIMessage(content=welcome_message)]
   logger.info("Cleared chat history and resume list")
 
+def update_selected_model():
+    st.session_state.selected_model = st.session_state.gpt_selection
+    logger.info(f"Updated selected model to: {st.session_state.selected_model}")
+
+
 # Set up the main chat interface
 user_query = st.chat_input("Type your message here...")
 
@@ -156,7 +208,7 @@ with st.sidebar:
 
   st.text_input("OpenAI's API Key", type="password", key="api_key", value="")
   #st.selectbox("RAG Mode", ["Generic RAG", "RAG Fusion"], placeholder="Generic RAG", key="rag_selection")
-  st.text_input("GPT Model", "gpt-4o", key="gpt_selection")
+  st.selectbox("GPT Model", AVAILABLE_MODELS, key="gpt_selection", on_change=update_selected_model)
   st.file_uploader("Upload resumes", type=["pdf"], key="uploaded_files", accept_multiple_files=True, on_change=upload_files)
   st.button("Clear conversation", on_click=clear_message)
 
