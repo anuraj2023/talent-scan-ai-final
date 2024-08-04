@@ -34,7 +34,7 @@ class RAGRetriever():
     self.df = df
 
 
-  def __reciprocal_rank_fusion__(self, document_rank_list: list[dict], k=50):
+  def reciprocal_rank_fusion(self, document_rank_list: list[dict], k=50):
     print("document_rank_list is : ", document_rank_list)
     fused_scores = {}
     for doc_list in document_rank_list:
@@ -46,7 +46,7 @@ class RAGRetriever():
     return reranked_results
 
 
-  def __retrieve_docs_id__(self, question: str, k: int):
+  def retrieve_docs_id(self, question: str, k: int):
     print("question is : ", question)
     docs_score = self.vectorstore.similarity_search_with_score(question, k=k)
     print("docs_score file length is : ", len(docs_score))
@@ -58,8 +58,8 @@ class RAGRetriever():
   def retrieve_id_and_rerank(self, subquestion_list: list):
     document_rank_list = []
     for subquestion in subquestion_list:
-      document_rank_list.append(self.__retrieve_docs_id__(subquestion, RAG_K_THRESHOLD))
-    reranked_documents = self.__reciprocal_rank_fusion__(document_rank_list)
+      document_rank_list.append(self.retrieve_docs_id(subquestion, RAG_K_THRESHOLD))
+    reranked_documents = self.reciprocal_rank_fusion(document_rank_list)
     print("reranked_documents is : ", reranked_documents)
     return reranked_documents
 

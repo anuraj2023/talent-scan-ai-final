@@ -50,24 +50,23 @@ def get_openai_model_names():
         return None
 
 # List of available Open AI models
-AVAILABLE_MODELS = get_openai_model_names()
-# [
-#    "gpt-4o-mini-2024-07-18",
-#    "gpt-4o-mini",
-#     "gpt-4o",
-#     "gpt-4o-2024-05-13",
-#     "gpt-4-turbo",
-#     "gpt-4-turbo-2024-04-09",
-#     "gpt-4-turbo-preview",
-#     "gpt-4-0125-preview",
-#     "gpt-4-1106-preview",
-#     "gpt-4",
-#     "gpt-4-0613",
-#     "gpt-4-0314",
-#     "gpt-3.5-turbo",
-#     "gpt-3.5-turbo-16k",
-#     "gpt-3.5-turbo-instruct"
-# ]
+AVAILABLE_MODELS = [
+   "gpt-4o-mini-2024-07-18",
+   "gpt-4o-mini",
+    "gpt-4o",
+    "gpt-4o-2024-05-13",
+    "gpt-4-turbo",
+    "gpt-4-turbo-2024-04-09",
+    "gpt-4-turbo-preview",
+    "gpt-4-0125-preview",
+    "gpt-4-1106-preview",
+    "gpt-4",
+    "gpt-4-0613",
+    "gpt-4-0314",
+    "gpt-3.5-turbo",
+    "gpt-3.5-turbo-16k",
+    "gpt-3.5-turbo-instruct"
+]
 
 
 import time
@@ -206,7 +205,7 @@ user_query = st.chat_input("Type your message here...")
 with st.sidebar:
   st.markdown("# Settings")
 
-  st.text_input("OpenAI's API Key", type="password", key="api_key", value="")
+  st.text_input("OpenAI's API Key", type="password", key="api_key", value=OPEN_AI_KEY)
   #st.selectbox("RAG Mode", ["Generic RAG", "RAG Fusion"], placeholder="Generic RAG", key="rag_selection")
   st.selectbox("GPT Model", AVAILABLE_MODELS, key="gpt_selection", on_change=update_selected_model)
   st.file_uploader("Upload resumes", type=["pdf"], key="uploaded_files", accept_multiple_files=True, on_change=upload_files)
