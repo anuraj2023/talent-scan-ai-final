@@ -95,8 +95,6 @@ welcome_message = """
 
   1. To set up, please add your OpenAI's API key. 🔑 
   2. Type in a job description query. 💬 (Example: Give me candidates who has worked on LLM)
-
-  Please make sure to check the sidebar for more useful information. 💡
 """
 
 # Set up Streamlit page
