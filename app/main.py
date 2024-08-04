@@ -205,7 +205,7 @@ user_query = st.chat_input("Type your message here...")
 with st.sidebar:
   st.markdown("# Settings")
 
-  st.text_input("OpenAI's API Key", type="password", key="api_key", value=OPEN_AI_KEY)
+  st.text_input("OpenAI's API Key", type="password", key="api_key", value="")
   #st.selectbox("RAG Mode", ["Generic RAG", "RAG Fusion"], placeholder="Generic RAG", key="rag_selection")
   st.selectbox("GPT Model", AVAILABLE_MODELS, key="gpt_selection", on_change=update_selected_model)
   st.file_uploader("Upload resumes", type=["pdf"], key="uploaded_files", accept_multiple_files=True, on_change=upload_files)
