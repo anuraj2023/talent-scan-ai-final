@@ -14,3 +14,4 @@ sentence-transformers==3.0.1
 faiss_cpu==1.8.0.post1
 pydantic==2.8.2
 pymilvus==2.4.4
+boto3==1.34.154

@@ -1,30 +1,26 @@
 import sys, os
-sys.dont_write_bytecode = True
+from s3_ingestor import upload_to_s3
 import io 
 import pandas as pd
 import streamlit as st
 import openai
-from streamlit_modal import Modal
 from PyPDF2 import PdfReader
-import logging
+from logging_config import logger
 from langchain_core.messages import AIMessage, HumanMessage
-from langchain_community.vectorstores import FAISS
-from langchain_community.vectorstores.faiss import DistanceStrategy
 from langchain_huggingface import HuggingFaceEmbeddings
 import requests
-
+import time
 from llm_agent import ChatBot
 from  data_ingestor import ingest
 from retriever import SelfQueryRetriever
 import chatbot_verbosity as chatbot_verbosity
-from dotenv import load_dotenv
 import os
+from config import get_env_vars
 
-# Load environment variables from the .env file
-load_dotenv()
-
-# Access the environment variables
-OPEN_AI_KEY = os.getenv('OPEN_AI_API_KEY')
+sys.dont_write_bytecode = True
+env_vars = get_env_vars()
+OPEN_AI_KEY = env_vars['OPEN_AI_KEY']
+S3_BUCKET_NAME = env_vars['S3_BUCKET_NAME']
 
 def get_openai_model_names():
     url = "https://api.openai.com/v1/models"
@@ -68,12 +64,6 @@ AVAILABLE_MODELS = [
     "gpt-3.5-turbo-instruct"
 ]
 
-
-import time
-
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
 
 # Set up file paths
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -141,7 +131,15 @@ def upload_files():
                 if uploaded_file.type == "application/pdf":
                     pdf_text = extract_text_from_pdf(io.BytesIO(uploaded_file.getvalue()))
                     df_list.append(pd.DataFrame({"ID": [uploaded_file.name], "Resume": [pdf_text]}))
-                    logger.info(f"Processed PDF file: {uploaded_file.name}")
+                    # Upload to S3
+                    s3_file_name = f"resumes/{uploaded_file.name}"
+                    status, url = upload_to_s3(io.BytesIO(uploaded_file.getvalue()), S3_BUCKET_NAME, s3_file_name)
+                    logger.info(f"URL is {url}")
+                    if status:
+                        logger.info(f"Uploaded {uploaded_file.name} to S3 bucket {S3_BUCKET_NAME}")
+                        st.success(f"Uploaded {uploaded_file.name} to S3")
+                    else:
+                        logger.error(f"Failed to upload {uploaded_file.name} to S3")
                 else:
                     st.error(f"Uploaded file {uploaded_file.name} is not a PDF.")
                     logger.warning(f"Skipped non-PDF file: {uploaded_file.name}")

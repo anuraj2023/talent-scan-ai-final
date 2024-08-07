@@ -1,0 +1,55 @@
+2024-08-06 18:15:20 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-06 18:15:20 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-06 18:15:20 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-06 18:15:20 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-06 18:15:20 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:23 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-06 18:15:24 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-06 18:15:24 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-06 18:15:30 - logging_config - INFO - Response for resumes/Aditya_Aggrawal_369.pdf is: None
+2024-08-06 18:15:30 - logging_config - INFO - Uploaded Aditya_Aggrawal_369.pdf to S3 bucket talent-scan-ai
+2024-08-06 18:15:31 - logging_config - INFO - Response for resumes/Devanshu_Res_2024.pdf is: None
+2024-08-06 18:15:31 - logging_config - INFO - Uploaded Devanshu_Res_2024.pdf to S3 bucket talent-scan-ai
+2024-08-06 18:15:32 - logging_config - INFO - Response for resumes/Kiran_h_Resume (2).pdf is: None
+2024-08-06 18:15:32 - logging_config - INFO - Uploaded Kiran_h_Resume (2).pdf to S3 bucket talent-scan-ai
+2024-08-06 18:15:32 - logging_config - INFO - Response for resumes/Nilesh_Prasad_Resume_June_2024.pdf is: None
+2024-08-06 18:15:32 - logging_config - INFO - Uploaded Nilesh_Prasad_Resume_June_2024.pdf to S3 bucket talent-scan-ai
+2024-08-06 18:15:33 - logging_config - INFO - Response for resumes/RahulAgarwal-Resume.pdf is: None
+2024-08-06 18:15:33 - logging_config - INFO - Uploaded RahulAgarwal-Resume.pdf to S3 bucket talent-scan-ai
+2024-08-06 18:15:34 - logging_config - INFO - Response for resumes/Saurabh_Singh_Resume.pdf is: None
+2024-08-06 18:15:34 - logging_config - INFO - Uploaded Saurabh_Singh_Resume.pdf to S3 bucket talent-scan-ai
+2024-08-06 18:15:34 - root - INFO - DataFrame shape: (6, 2)
+2024-08-06 18:15:34 - root - INFO - Columns: ['ID', 'Resume']
+2024-08-06 18:15:34 - root - INFO - Sample data from 'Resume': 0    ADITYA AGARWAL\nINDIA7000458054\nDETAILS\nIndi...
+1    .\nD e v a n s h uM i s h r a\nd e v a n s h u...
+2    KIRAN HEBASUR\nAI/ML Engineer\nkiran475h@gmail...
+3    NILESHPRASADnileshpr asad.cs@gmail.c om|GitHub...
+4    RAHUL AGARWAL\n+91-8003844161 ⋄Jaipur, Rajasth...
+Name: Resume, dtype: object
+2024-08-06 18:15:34 - root - INFO - Number of documents loaded: 6
+2024-08-06 18:15:34 - root - INFO - Number of document chunks: 68
+2024-08-06 18:15:38 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2024-08-06 18:15:38 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2024-08-06 18:15:38 - root - INFO - Ingestion completed successfully
+2024-08-06 18:15:38 - logging_config - INFO - Indexed 6 new resume files
+2024-08-06 18:15:39 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:39 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-06 18:15:39 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-06 18:15:39 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
