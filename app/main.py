@@ -271,25 +271,20 @@ if user_query is not None and user_query != "":
         st.session_state.chat_history.append(HumanMessage(content=user_query))
 
     with st.chat_message("AI"):
-        start = time.time()
-        with st.spinner("Generating answers..."):
-            document_list = []
-            if st.session_state.vectordb:
-                resume_docs = st.session_state.vectordb.similarity_search(user_query, k=5)
-                document_list.extend(resume_docs)
-            
-            if document_list:
-                query_type = st.session_state.retriever.meta_data["query_type"]
-                stream_message = st.session_state.llm.generate_message_stream(user_query, document_list, [], query_type)
-                response = st.write_stream(stream_message)
-                
-                retriever_message = chatbot_verbosity
-                retriever_message.render(document_list, st.session_state.retriever.meta_data, time.time() - start)
+      start = time.time()
+      with st.spinner("Generating answers..."):
+        document_list = st.session_state.retriever.retrieve_docs(user_query, st.session_state.llm, st.session_state.rag_selection)
+        query_type = st.session_state.retriever.meta_data["query_type"]
+        # st.session_state.resume_list = document_list
+        stream_message = st.session_state.llm.generate_message_stream(user_query, document_list, st.session_state.chat_history, query_type)
+      end = time.time()
 
-                st.session_state.chat_history.append(AIMessage(content=response))
-                st.session_state.chat_history.append((retriever_message, document_list, st.session_state.retriever.meta_data, time.time() - start))
-            else:
-                st.warning("No documents have been uploaded yet. Please upload resumes and/or job descriptions to get started.")
+      response = st.write_stream(stream_message)
+    
+      retriever_message = chatbot_verbosity
+      retriever_message.render(document_list, st.session_state.retriever.meta_data, end-start)
 
-        end = time.time()
-        logger.info(f"Processed query in {end-start:.2f} seconds. Query type: {query_type}")
+      st.session_state.chat_history.append(AIMessage(content=response))
+      st.session_state.chat_history.append((retriever_message, document_list, st.session_state.retriever.meta_data, end-start))
+
+      logger.info(f"Processed query in {end-start:.2f} seconds. Query type: {query_type}")

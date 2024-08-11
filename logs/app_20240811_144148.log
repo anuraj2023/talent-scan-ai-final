@@ -1,0 +1,228 @@
+2024-08-11 14:41:53 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-11 14:41:53 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-11 14:41:53 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-11 14:41:53 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-11 14:41:53 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-11 14:41:53 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-11 14:41:53 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-11 14:41:56 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:56 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:41:56 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:56 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:41:56 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:56 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:41:57 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:57 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:41:57 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:57 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:41:57 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:57 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:41:57 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:57 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:41:57 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:57 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:57 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:57 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:57 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:57 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:41:57 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:41:57 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:41:57 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:41:57 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:41:58 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:58 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:41:58 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:41:58 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:42:09 - logging_config - INFO - Successfully uploaded resumes/48_VikasM.pdf to bucket talent-scan-ai
+2024-08-11 14:42:09 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/48_VikasM.pdf
+2024-08-11 14:42:09 - logging_config - INFO - Uploaded 48_VikasM.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:10 - logging_config - INFO - Successfully uploaded resumes/Aditya_Aggrawal_369.pdf to bucket talent-scan-ai
+2024-08-11 14:42:10 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Aditya_Aggrawal_369.pdf
+2024-08-11 14:42:10 - logging_config - INFO - Uploaded Aditya_Aggrawal_369.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:10 - logging_config - INFO - Successfully uploaded resumes/Akshay_Bhat_Resume_2024_01.pdf to bucket talent-scan-ai
+2024-08-11 14:42:10 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Akshay_Bhat_Resume_2024_01.pdf
+2024-08-11 14:42:10 - logging_config - INFO - Uploaded Akshay_Bhat_Resume_2024_01.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:11 - logging_config - INFO - Successfully uploaded resumes/Devanshu_Res_2024.pdf to bucket talent-scan-ai
+2024-08-11 14:42:11 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Devanshu_Res_2024.pdf
+2024-08-11 14:42:11 - logging_config - INFO - Uploaded Devanshu_Res_2024.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:11 - logging_config - INFO - Successfully uploaded resumes/HAMZA_SHAKEEL_kyndryl2.pdf to bucket talent-scan-ai
+2024-08-11 14:42:11 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/HAMZA_SHAKEEL_kyndryl2.pdf
+2024-08-11 14:42:11 - logging_config - INFO - Uploaded HAMZA_SHAKEEL_kyndryl2.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:12 - logging_config - INFO - Successfully uploaded resumes/HanithaVarsini.pdf to bucket talent-scan-ai
+2024-08-11 14:42:12 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/HanithaVarsini.pdf
+2024-08-11 14:42:12 - logging_config - INFO - Uploaded HanithaVarsini.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:13 - logging_config - INFO - Successfully uploaded resumes/Kiran_h_Resume.pdf to bucket talent-scan-ai
+2024-08-11 14:42:13 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Kiran_h_Resume.pdf
+2024-08-11 14:42:13 - logging_config - INFO - Uploaded Kiran_h_Resume.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:13 - logging_config - INFO - Successfully uploaded resumes/Nilesh_Prasad_Resume_June_2024.pdf to bucket talent-scan-ai
+2024-08-11 14:42:13 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Nilesh_Prasad_Resume_June_2024.pdf
+2024-08-11 14:42:13 - logging_config - INFO - Uploaded Nilesh_Prasad_Resume_June_2024.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:14 - logging_config - INFO - Successfully uploaded resumes/RahulAgarwal-Resume.pdf to bucket talent-scan-ai
+2024-08-11 14:42:14 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/RahulAgarwal-Resume.pdf
+2024-08-11 14:42:14 - logging_config - INFO - Uploaded RahulAgarwal-Resume.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:14 - PyPDF2._reader - WARNING - incorrect startxref pointer(3)
+2024-08-11 14:42:14 - logging_config - INFO - Successfully uploaded resumes/Ranjitask_comp_vision_eng.pdf to bucket talent-scan-ai
+2024-08-11 14:42:14 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Ranjitask_comp_vision_eng.pdf
+2024-08-11 14:42:14 - logging_config - INFO - Uploaded Ranjitask_comp_vision_eng.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:15 - logging_config - INFO - Successfully uploaded resumes/Resume - Sagar Kaushik.pdf to bucket talent-scan-ai
+2024-08-11 14:42:15 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Resume%20-%20Sagar%20Kaushik.pdf
+2024-08-11 14:42:15 - logging_config - INFO - Uploaded Resume - Sagar Kaushik.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:15 - logging_config - INFO - Successfully uploaded resumes/Resume_Joel_Joseph_2024_Jun .pdf to bucket talent-scan-ai
+2024-08-11 14:42:15 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Resume_Joel_Joseph_2024_Jun%20.pdf
+2024-08-11 14:42:15 - logging_config - INFO - Uploaded Resume_Joel_Joseph_2024_Jun .pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:16 - logging_config - INFO - Successfully uploaded resumes/Saurabh_Singh_Resume.pdf to bucket talent-scan-ai
+2024-08-11 14:42:16 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Saurabh_Singh_Resume.pdf
+2024-08-11 14:42:16 - logging_config - INFO - Uploaded Saurabh_Singh_Resume.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:17 - logging_config - INFO - Successfully uploaded resumes/VIVEK WASNIK.pdf to bucket talent-scan-ai
+2024-08-11 14:42:17 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/VIVEK%20WASNIK.pdf
+2024-08-11 14:42:17 - logging_config - INFO - Uploaded VIVEK WASNIK.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:42:17 - root - INFO - DataFrame shape: (14, 2)
+2024-08-11 14:42:17 - root - INFO - Columns: ['ID', 'Content']
+2024-08-11 14:42:17 - root - INFO - Sample data from 'Content': 0    V\ni\nk\na\ns\nM\na\ng\na\nr\ne\nA\nI\nE\nn\ng...
+1    ADITYA AGARWAL\nINDIA7000458054\nDETAILS\nIndi...
+2    Akshay Bhat\nakshaymbhat81@gmail.com     |   9...
+3    .\nD e v a n s h uM i s h r a\nd e v a n s h u...
+4    Profile\nExperienced Python Developer with exp...
+Name: Content, dtype: object
+2024-08-11 14:42:17 - root - INFO - Number of documents loaded: 14
+2024-08-11 14:42:17 - root - INFO - Number of document chunks: 160
+2024-08-11 14:42:26 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2024-08-11 14:42:26 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2024-08-11 14:42:26 - root - INFO - Ingestion completed successfully
+2024-08-11 14:42:26 - logging_config - INFO - Indexed 14 new resume files
+2024-08-11 14:42:27 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:42:27 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:42:27 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:42:27 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:42:33 - logging_config - INFO - Successfully uploaded job-descriptions/JD_AI_Engineer_shortened.docx to bucket talent-scan-ai
+2024-08-11 14:42:33 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/job-descriptions/JD_AI_Engineer_shortened.docx
+2024-08-11 14:42:33 - logging_config - INFO - Uploaded JD_AI_Engineer_shortened.docx to S3 bucket talent-scan-ai
+2024-08-11 14:42:33 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:42:33 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:42:34 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:42:34 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:42:52 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:42:52 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:42:52 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:42:52 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:44:10 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:44:10 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:44:11 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:44:11 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:44:22 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-08-11 14:44:24 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:44:24 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:44:25 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:44:25 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:44:44 - logging_config - INFO - Successfully uploaded resumes/48_VikasM.pdf to bucket talent-scan-ai
+2024-08-11 14:44:44 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/48_VikasM.pdf
+2024-08-11 14:44:44 - logging_config - INFO - Uploaded 48_VikasM.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:45 - logging_config - INFO - Successfully uploaded resumes/Aditya_Aggrawal_369.pdf to bucket talent-scan-ai
+2024-08-11 14:44:45 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Aditya_Aggrawal_369.pdf
+2024-08-11 14:44:45 - logging_config - INFO - Uploaded Aditya_Aggrawal_369.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:46 - logging_config - INFO - Successfully uploaded resumes/Akshay_Bhat_Resume_2024_01.pdf to bucket talent-scan-ai
+2024-08-11 14:44:46 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Akshay_Bhat_Resume_2024_01.pdf
+2024-08-11 14:44:46 - logging_config - INFO - Uploaded Akshay_Bhat_Resume_2024_01.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:47 - logging_config - INFO - Successfully uploaded resumes/Devanshu_Res_2024.pdf to bucket talent-scan-ai
+2024-08-11 14:44:47 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Devanshu_Res_2024.pdf
+2024-08-11 14:44:47 - logging_config - INFO - Uploaded Devanshu_Res_2024.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:47 - logging_config - INFO - Successfully uploaded resumes/HAMZA_SHAKEEL_kyndryl2.pdf to bucket talent-scan-ai
+2024-08-11 14:44:47 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/HAMZA_SHAKEEL_kyndryl2.pdf
+2024-08-11 14:44:47 - logging_config - INFO - Uploaded HAMZA_SHAKEEL_kyndryl2.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:49 - logging_config - INFO - Successfully uploaded resumes/HanithaVarsini.pdf to bucket talent-scan-ai
+2024-08-11 14:44:49 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/HanithaVarsini.pdf
+2024-08-11 14:44:49 - logging_config - INFO - Uploaded HanithaVarsini.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:49 - logging_config - INFO - Successfully uploaded resumes/Kiran_h_Resume.pdf to bucket talent-scan-ai
+2024-08-11 14:44:49 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Kiran_h_Resume.pdf
+2024-08-11 14:44:49 - logging_config - INFO - Uploaded Kiran_h_Resume.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:50 - logging_config - INFO - Successfully uploaded resumes/Nilesh_Prasad_Resume_June_2024.pdf to bucket talent-scan-ai
+2024-08-11 14:44:50 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Nilesh_Prasad_Resume_June_2024.pdf
+2024-08-11 14:44:50 - logging_config - INFO - Uploaded Nilesh_Prasad_Resume_June_2024.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:51 - logging_config - INFO - Successfully uploaded resumes/RahulAgarwal-Resume.pdf to bucket talent-scan-ai
+2024-08-11 14:44:51 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/RahulAgarwal-Resume.pdf
+2024-08-11 14:44:51 - logging_config - INFO - Uploaded RahulAgarwal-Resume.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:51 - PyPDF2._reader - WARNING - incorrect startxref pointer(3)
+2024-08-11 14:44:51 - logging_config - INFO - Successfully uploaded resumes/Ranjitask_comp_vision_eng.pdf to bucket talent-scan-ai
+2024-08-11 14:44:51 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Ranjitask_comp_vision_eng.pdf
+2024-08-11 14:44:51 - logging_config - INFO - Uploaded Ranjitask_comp_vision_eng.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:52 - logging_config - INFO - Successfully uploaded resumes/Resume - Sagar Kaushik.pdf to bucket talent-scan-ai
+2024-08-11 14:44:52 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Resume%20-%20Sagar%20Kaushik.pdf
+2024-08-11 14:44:52 - logging_config - INFO - Uploaded Resume - Sagar Kaushik.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:53 - logging_config - INFO - Successfully uploaded resumes/Resume_Joel_Joseph_2024_Jun .pdf to bucket talent-scan-ai
+2024-08-11 14:44:53 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Resume_Joel_Joseph_2024_Jun%20.pdf
+2024-08-11 14:44:53 - logging_config - INFO - Uploaded Resume_Joel_Joseph_2024_Jun .pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:53 - logging_config - INFO - Successfully uploaded resumes/Saurabh_Singh_Resume.pdf to bucket talent-scan-ai
+2024-08-11 14:44:53 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/Saurabh_Singh_Resume.pdf
+2024-08-11 14:44:53 - logging_config - INFO - Uploaded Saurabh_Singh_Resume.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:54 - logging_config - INFO - Successfully uploaded resumes/VIVEK WASNIK.pdf to bucket talent-scan-ai
+2024-08-11 14:44:54 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/resumes/VIVEK%20WASNIK.pdf
+2024-08-11 14:44:54 - logging_config - INFO - Uploaded VIVEK WASNIK.pdf to S3 bucket talent-scan-ai
+2024-08-11 14:44:54 - root - INFO - DataFrame shape: (14, 2)
+2024-08-11 14:44:54 - root - INFO - Columns: ['ID', 'Content']
+2024-08-11 14:44:54 - root - INFO - Sample data from 'Content': 0    V\ni\nk\na\ns\nM\na\ng\na\nr\ne\nA\nI\nE\nn\ng...
+1    ADITYA AGARWAL\nINDIA7000458054\nDETAILS\nIndi...
+2    Akshay Bhat\nakshaymbhat81@gmail.com     |   9...
+3    .\nD e v a n s h uM i s h r a\nd e v a n s h u...
+4    Profile\nExperienced Python Developer with exp...
+Name: Content, dtype: object
+2024-08-11 14:44:54 - root - INFO - Number of documents loaded: 14
+2024-08-11 14:44:54 - root - INFO - Number of document chunks: 160
+2024-08-11 14:45:02 - root - INFO - Ingestion completed successfully
+2024-08-11 14:45:02 - logging_config - INFO - Indexed 14 new resume files
+2024-08-11 14:45:03 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:45:03 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:45:03 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:45:03 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:45:10 - logging_config - INFO - Successfully uploaded job-descriptions/JD_AI_Engineer_shortened.docx to bucket talent-scan-ai
+2024-08-11 14:45:10 - logging_config - INFO - S3 URL: https://talent-scan-ai.s3.ap-south-1.amazonaws.com/job-descriptions/JD_AI_Engineer_shortened.docx
+2024-08-11 14:45:10 - logging_config - INFO - Uploaded JD_AI_Engineer_shortened.docx to S3 bucket talent-scan-ai
+2024-08-11 14:45:11 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:45:11 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:45:11 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:45:11 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:45:22 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:45:22 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:45:22 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:45:22 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:45:23 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-08-11 14:45:24 - logging_config - INFO - Processed query in 1.57 seconds. Query type: no_retrieve
+2024-08-11 14:46:10 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:46:10 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:46:10 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:46:10 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:46:11 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-08-11 14:46:11 - logging_config - INFO - Processed query in 0.98 seconds. Query type: no_retrieve
+2024-08-11 14:47:23 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:47:23 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:47:24 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:47:24 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:47:24 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-08-11 14:47:26 - logging_config - INFO - Processed query in 2.26 seconds. Query type: no_retrieve
+2024-08-11 14:49:11 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:11 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:12 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:49:12 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:12 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:49:12 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:49:12 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:12 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:49:13 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:13 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:13 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:13 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:13 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:13 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:49:13 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:49:13 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:49:13 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:49:13 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:49:13 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:13 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:13 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:49:13 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:13 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:49:14 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18
+2024-08-11 14:49:18 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:18 - logging_config - INFO - OpenAI API key validated successfully
+2024-08-11 14:49:19 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-08-11 14:49:19 - logging_config - INFO - Validated model name: gpt-4o-mini-2024-07-18

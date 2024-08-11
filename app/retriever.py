@@ -65,7 +65,7 @@ class RAGRetriever():
 
 
   def retrieve_documents_with_id(self, doc_id_with_score: dict, threshold=RAG_K_THRESHOLD):
-    id_resume_dict = dict(zip(self.df["ID"].astype(str), self.df["Resume"]))
+    id_resume_dict = dict(zip(self.df["ID"].astype(str), self.df["Content"]))
     retrieved_ids = list(sorted(doc_id_with_score, key=doc_id_with_score.get, reverse=True))[:threshold]
     retrieved_documents = [id_resume_dict[id] for id in retrieved_ids]
     for i in range(len(retrieved_documents)):
@@ -99,7 +99,7 @@ class SelfQueryRetriever(RAGRetriever):
 
       for id in id_list:
         try:
-          resume = self.df[self.df["ID"].astype(str) == id].iloc[0]["Resume"]
+          resume = self.df[self.df["ID"].astype(str) == id].iloc[0]["Content"]
           retrieved_resumes.append(resume)
         except:
           return []
