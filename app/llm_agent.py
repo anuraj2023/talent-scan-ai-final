@@ -3,6 +3,7 @@ sys.dont_write_bytecode = True
 
 from langchain_openai.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
+from langchain.docstore.document import Document
 
 
 class ChatBot():
@@ -98,10 +99,9 @@ class ChatBot():
     response = self.llm.invoke([system_message, oneshot_example, oneshot_response, user_message])
     result = response.content.split("\n\n")
     return result
-  
 
   def generate_message_stream(self, question: str, docs: list, history: list, prompt_cls: str):
-    context = "\n\n".join(doc for doc in docs)
+    context = "\n\n".join(doc.page_content if isinstance(doc, Document) else str(doc) for doc in docs)
     
     if prompt_cls == "retrieve_matching_applicant_by_jd":
       system_message = SystemMessage(content="""
